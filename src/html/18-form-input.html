@@ -24,5 +24,65 @@
         </div>
       </fieldset>
     </form>
+    <!-- 텍스트 입력 서식 -->
+    <hr />
+    <form id="inputForm" action="https://formspree.io/f/xeqwwbwk" method="post">
+      <div>
+        <label for="userID">이름</label>
+        <input type="text" id="userID" required placeholder="예) 사민재" name="name" />
+      </div>
+      <!-- 비밀번호 입력서식 -->
+
+      <div>
+        <label for="userPwd">비밀번호</label>
+        <input type="password" id="userPwd" required placeholder="최소 8자리 이상" name="password" />
+      </div>
+      <div>
+        <label for="userEmail">이메일</label>
+        <input type="email" id="userEmail" required placeholder="예) ykm123432@naver.com" name="email" />
+      </div>
+      <div>
+        <label for="userPhone">전화번호</label>
+        <input type="tel" pattern="[0-9]{10}" id="userPhone" required placeholder="예) 010-8888-8888" name="phonenumber" />
+      </div>
+
+      <!-- url입력 서식 -->
+      <div>
+        <label for="userSns">SNS</label>
+        <input type="url" id="userSns" required placeholder="예)https://www.instagram.com" name="sns" />
+      </div>
+      <!-- 검색어 입력 서식 -->
+      <div>
+        <label for="Search">검색어</label>
+        <input type="search" id="Search" placeholder="검색어 예) 멋쟁이 사자처럼" name="search" />
+      </div>
+      <!-- 라디오 입력 서식 -->
+      <div>
+        <input type="radio" id="male" name="gender" value="man" checked />
+        <label for="male">남자</label>
+        <input type="radio" id="female" name="gender" value="woman" />
+        <label for="female">여자</label>
+      </div>
+      <!-- 체크박스 입력서식 -->
+      <div>
+        <input type="checkbox" id="html" name="frontend" value="html" checked />
+        <label for="html">html</label>
+        <input type="checkbox" id="css" name="frontend" value="css" />
+        <label for="css">css</label>
+        <input type="checkbox" id="js" name="frontend" value="js" />
+        <label for="js">javascript</label>
+      </div>
+      <!-- 파일 첨부 서식 -->
+      <div>
+        <input type="file" />
+      </div>
+      <!-- 전송 버튼 -->
+      <input type="submit" value="전송" />
+      <!-- <button type="submit">제출</button> -->
+      <!-- 초기화버튼 -->
+      <!-- 일반버튼 -->
+      <input type="button" value="click!" />
+    </form>
+    <input form="inputForm" type="reset" value="초기화" />
   </body>
 </html>
