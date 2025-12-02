@@ -1,0 +1,53 @@
+.frontend {
+  font-size: 0;
+}
+/* display 속성 */
+.frontend span {
+  background-color: #ffc;
+  display: block;
+}
+.frontend p {
+  background-color: #fcf;
+  display: inline;
+}
+
+.frontend div,
+.frontend p {
+  font-size: 16px;
+}
+
+/* 보더 속성 */
+.frontend {
+  border: 1px solid red;
+}
+
+.frontend {
+  padding: 10px 20px 30px 40px;
+}
+
+.frontend {
+  /* margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-left: 40px; */
+  margin: 10px;
+}
+
+/* width height 속성 */
+.frontend span:first-child {
+  width: 100px;
+  aspect-ratio: 2/1;
+}
+/* width height 속성 */
+.frontend span:last-child {
+  width: 5em;
+  height: 5em;
+}
+
+/* overflow 속성 */
+.school {
+  background-color: #cff;
+  width: 200px;
+  height: 150px;
+  overflow: scroll;
+}
