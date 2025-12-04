@@ -11,25 +11,79 @@
     <link rel="stylesheet" href="/src/common/index.css" />
     <link rel="stylesheet" href="/src/ui/avatars/avatars.css" />
     <script type="module" src="/src/ui/js/copy-component.js"></script>
+    <script type="module" src="./avartars-js"></script>
   </head>
   <body class="css">
     <a href="/index.html">Index로 이동</a>
     <h1>아바타 ui</h1>
+    <h2>아바타 레이아웃</h2>
+    <ul class="avartar-list">
+      <li class="avartar-item"><button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
+        <img src="/src/assets/face/face1.webp" width="64" height="64" alt="아바타 이름1" />
+        <span class="avatar-state is-online"></span>
+      </button></li>
+      <li class="avartar-item"><button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
+        <img src="/src/assets/face/face2.webp" width="64" height="64" alt="아바타 이름2" />
+        <span class="avatar-state is-online"></span>
+      </button></li>
+      <li class="avartar-item"><button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
+        <img src="/src/assets/face/face3.webp" width="64" height="64" alt="아바타 이름3" />
+        <span class="avatar-state is-online"></span>
+      </button></li>
+      <li class="avartar-item"><button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
+        <img src="/src/assets/face/face4.webp" width="64" height="64" alt="아바타 이름4" />
+        <span class="avatar-state is-online"></span>
+      </button></li>
+      <li class="avartar-item"><button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
+        <img src="/src/assets/face/face5.webp" width="64" height="64" alt="아바타 이름5" />
+        <span class="avatar-state is-online"></span>
+      </button></li>
+      <li class="avartar-item"><button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
+        <img src="/src/assets/face/face6.webp" width="64" height="64" alt="아바타 이름6" />
+        <span class="avatar-state is-online"></span>
+      </button></li>
+      <li class="avartar-item"><button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
+        <img src="/src/assets/face/face7.webp" width="64" height="64" alt="아바타 이름7" />
+        <span class="avatar-state is-online"></span>
+      </button></li>
+      <li class="avartar-item"><button type="button" class="avatar" aria-label="아바타 상태 토글 : 온라인" aria-pressed="true">
+        <img src="/src/assets/face/face8.webp" width="64" height="64" alt="아바타 이름8" />
+        <span class="avatar-state is-online"></span>
+      </button></li>
+    </ul>
     <hr />
+    <h2>아바타 컴포넌트</h2>
     <h2>온라인 상태</h2>
     <div class="ui-component">
-      <div class="avatar">
+      <button type="button" class="avatar" aria-label="온라인">
         <img src="/src/assets/face/face1.webp" width="64" height="64" alt="아바타 이름" />
-        <span class="avatar-state is-online"><span class="sr-only">온라인</span></span>
-      </div>
+        <span class="avatar-state is-online"></span>
+      </button>
       <button type="button" class="copy-component">복사</button>
     </div>
     <h2>오프라인 상태</h2>
     <div class="ui-component">
+      <button type="button" class="avatar">
+        <img src="/src/assets/face/face1.webp" width="64" height="64" alt="아바타 이름" />
+        <span class="avatar-state"><span class="sr-only">오프라인</span></span>
+      </button>
+      <button type="button" class="copy-component">복사</button>
+    </div>
+    <hr />
+    <div class="ui-component">
+      <h2>온라인 상태</h2>
       <div class="avatar">
+        <img src="/src/assets/face/face1.webp" width="64" height="64" alt="아바타 이름" />
+    </div>
+    <div class="ui-component">
+      <div class="avatar">
+        <h3>오프라인 상태</h3>
+      <figure class="avatar">
         <img src="/src/assets/face/face1.webp" width="64" height="64" alt="아바타 이름" />
         <span class="avatar-state"><span class="sr-only">오프라인</span></span>
       </div>
+        <figcaption class="avatar-state"><span class="sr-only">오프라인</span></figcaption>
+      </figure>
       <button type="button" class="copy-component">복사</button>
     </div>
   </body>
