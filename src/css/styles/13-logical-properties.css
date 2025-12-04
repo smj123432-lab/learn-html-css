@@ -1,0 +1,56 @@
+/* 논리 속성과 논리값 */
+/* width, height */
+
+.like {
+  background: #ffc;
+  inline-size: 200px;
+  /* 인라인 사이즈 (너비) */
+  block-size: 100px;
+  /* 블록 사이즈 (높이) */
+  /* 가급적이면 논리 속성을 쓰는게 바람직하긴 하다. */
+}
+
+/* margin, padding */
+.lion {
+  background: #ffc;
+  padding-block: 20px;
+  /* 탑 바텀 같이 20px을 줄 수 있음 */
+  margin-inline: 20px;
+  /* 좌우 한꺼번에 20px */
+
+  /* padding-block-start: ; */
+  /* 패딩 탑과 같음 엔드는 바텀*/
+}
+
+/* position: absolute; top, right, bottom, left */
+.bootcamp {
+  background: #cff;
+  position: relative;
+  inline-size: 300px;
+  block-size: 100px;
+
+  strong {
+    position: absolute;
+    background: #fcf;
+    /* inset-inline-start: 0;
+    inset-inline-end: 0;
+    inset-block-start: 0;
+    inset-block-end: 0; */
+    inset: 0;
+  }
+}
+
+.frontend {
+  background: #cff;
+
+  strong {
+    background: yellowgreen;
+    float: inline-end;
+  }
+}
+
+.euid {
+  padding: 10px;
+  background: salmon;
+  border-block-end: 2px solid blue;
+}
