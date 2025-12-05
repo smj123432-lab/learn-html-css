@@ -41,9 +41,11 @@ div {
   display: flex;
   /* flex-direction: row-reverse;
   flex-wrap: wrap; */
-  flex-flow: wrap row-reverse;
+  flex-flow: wrap row;
   padding: 0.5em;
   inline-size: 600px;
+  block-size: 200px;
+  justify-content: space-evenly;
 
   > div {
     inline-size: 150px;
@@ -57,4 +59,58 @@ div {
   justify-content: space-evenly;
   flex-flow: nowrap row;
   align-items: stretch;
+}
+/* align-contents */
+.frontend {
+  display: flex;
+  inline-size: 400px;
+  block-size: 200px;
+  flex-flow: wrap row;
+  justify-content: start;
+  align-items: stretch;
+  /* nowrap일때 콘텐츠 wrap일때 아이템 */
+  align-contents: space-evenly;
+
+  > div {
+    inline-size: 200px;
+  }
+}
+
+/* gap */
+
+.bootcamp {
+  inline-size: 400px;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: start;
+  align-items: stretch;
+  /* 전체 정렬 */
+  /* padding: 1em; */
+  column-gap: 40px;
+  block-size: 200px;
+
+  > div {
+    inline-size: 180px;
+  }
+
+  .bootcamp-item1 {
+    align-self: end;
+    /* 개별 정렬 */
+    border: 1px solid red;
+  }
+}
+
+.school {
+  display: flex;
+  flex-flow: nowrap row;
+  inline-size: 50%;
+
+  > div {
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0px; */
+    flex: 1 1 0;
+    /* 쉬링크는 축소 그로우는 확대 위드랑 베이시스가 동시에 선언되면 위드는 무시된다. */
+    inline-size: 50px;
+  }
 }
