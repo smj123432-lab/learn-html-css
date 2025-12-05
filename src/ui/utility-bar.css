@@ -1,0 +1,41 @@
+.utility-bar {
+  --spacing: 8px;
+
+  font-size: 0.875rem;
+  display: flow-root;
+  text-transform: uppercase;
+  padding: calc(var(--spacing) / 2);
+
+  li {
+    float: left;
+    display: flow-root;
+
+    span,
+    a {
+      float: inline-start;
+      padding: calc(var(--spacing) / 2);
+    }
+  }
+}
+
+.utility-bar-before {
+  --spacing: 8px;
+
+  font-size: 0.875rem;
+  display: flow-root;
+  text-transform: uppercase;
+  padding: calc(var(--spacing) / 2);
+
+  li {
+    float: inline-start;
+  }
+  li:nth-child(n + 2)::before {
+    content: '|';
+  }
+  /* 비포 에프터는 나중에 자바스크립트로 제어가 안돼서 요즘에 사용 안함 */
+  li:nth-child(n + 2)::before,
+  a {
+    float: left;
+    padding: 4px;
+  }
+}
