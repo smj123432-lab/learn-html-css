@@ -7,7 +7,7 @@
 
 .members {
   inline-size: 100%;
-  border: 1px solid #121212;
+  border-inline: 1px solid #121212;
 
   tr:nth-child(even) {
     background: #cfd8dc;
@@ -43,6 +43,7 @@
   th,
   td {
     padding: 0.5em 1em;
+    white-space: nowrap;
   }
 
   th {

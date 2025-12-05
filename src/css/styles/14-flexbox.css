@@ -1,0 +1,60 @@
+/* 플렉스 박스는 1차원 레이아웃 
+디스플레이를 플렉스로 주는 순간 디비전은 콘테이너가 되고 
+자식요소는 플렉스 아이템이 된다.
+플렉스를 준다해서 블록 요소가 인라인 요소가 된 것이 아님 
+그냥 유동적인 블록 요소일 뿐*/
+
+/* order 숫자가 작을 수록 앞에 배치 기본값은 0 */
+
+div {
+  background: var(--yellow);
+
+  > div:nth-child(1) {
+    background: var(--pink);
+  }
+  > div:nth-child(2) {
+    background: var(--green);
+  }
+  > div:nth-child(3) {
+    background: var(--blue);
+  }
+  > div:nth-child(4) {
+    background: var(--orange);
+  }
+}
+
+/* flex - flex-direction */
+.like {
+  padding: 0.5em;
+  display: flex;
+  /* 디렉션은 반드시 컨테이나에 */
+  flex-direction: column;
+
+  div:nth-child(even) {
+    /* 오더는 플렉스 아이템에*/
+    order: 1;
+  }
+}
+
+/* flex-wrap, flex-flow */
+.lion {
+  display: flex;
+  /* flex-direction: row-reverse;
+  flex-wrap: wrap; */
+  flex-flow: wrap row-reverse;
+  padding: 0.5em;
+  inline-size: 600px;
+
+  > div {
+    inline-size: 150px;
+  }
+}
+
+.euid {
+  block-size: 200px;
+  padding: 0.5em;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: nowrap row;
+  align-items: stretch;
+}
