@@ -69,7 +69,7 @@ div {
   justify-content: start;
   align-items: stretch;
   /* nowrap일때 콘텐츠 wrap일때 아이템 */
-  align-contents: space-evenly;
+  align-content: space-evenly;
 
   > div {
     inline-size: 200px;
