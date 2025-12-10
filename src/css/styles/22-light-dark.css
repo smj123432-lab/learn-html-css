@@ -1,0 +1,19 @@
+:root {
+  color-scheme: light dark;
+}
+
+/* 라이트/다크모드 */
+
+body {
+  background: yellowgreen;
+  color: #fff;
+
+  @media (prefers-color-scheme: dark) {
+    background: purple;
+    color: #fff;
+  }
+}
+body {
+  color: light-dark(#333b3c, #efefec);
+  background-color: light-dark(#efedea, #223a2c);
+}
