@@ -1,0 +1,31 @@
+@import '/src/ui/news/이디야news.css';
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.container {
+  background: #ffc;
+  display: grid;
+  width: 1180px;
+  margin-inline: auto;
+  grid-template-columns: repeat(12, 80px);
+  grid-template-rows: 120px 500px 120px;
+
+  .header,
+  .footer {
+    grid-column: span 12;
+  }
+
+  .main {
+    grid-column: 3 / -3;
+    background: pink;
+    display: grid;
+    grid-template-columns: subgrid;
+    align-content: start;
+
+    .news {
+      grid-column: 3 / span 6;
+    }
+  }
+}
