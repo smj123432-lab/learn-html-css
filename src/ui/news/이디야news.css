@@ -10,6 +10,57 @@
   --end-color: var(--blue-300);
 }
 
+.notice {
+  --spacing: 12px;
+  background: var(--blue-300);
+  display: grid;
+  min-width: 320px;
+  grid-template-columns: 125px minmax(230px, 1fr);
+
+  h2,
+  div {
+    grid-area: 1/1/2/2;
+  }
+
+  h2 {
+    padding: var(--spacing);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  div {
+    place-self: end;
+    display: flex;
+    flex-flow: nowrap row;
+    padding: var(--spacing);
+
+    svg {
+      display: block;
+    }
+
+    button {
+      border: 0;
+      padding: 0;
+      background: none;
+      /* 다 없앨때 근데 접근성에 문제가 생길 수도 있음 포커스가 안됨 */
+    }
+  }
+  article {
+    padding: var(--spacing);
+    background: var(--white);
+    h3 {
+      color: var(--blue-200);
+    }
+
+    p {
+      line-height: 1.5;
+      letter-spacing: -0.02em;
+      margin-top: 10px;
+    }
+  }
+}
+
 .news {
   box-shadow: 0 0 0 1px red;
   background: var(--blue-300);
